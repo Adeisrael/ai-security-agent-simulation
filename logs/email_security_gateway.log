@@ -1,0 +1,8 @@
+2026-10-13T07:55:00Z mail-gw-01 id=msg-81001 direction=inbound from=notice@vendor.example to=finance@example.corp subject="Invoice ready" src_ip=192.0.2.40 spf=pass dkim=pass action=deliver
+2026-10-13T07:55:12Z mail-gw-01 id=msg-81002 direction=inbound from=hr-update@external.example to=employee@example.corp subject="Benefits enrollment" src_ip=198.51.100.44 spf=fail dkim=none action=quarantine
+2026-10-13T07:55:14Z mail-gw-01 id=msg-81003 direction=inbound from=people-ops@hr-portal.example to=alex@example.corp subject="Urgent: verify your payroll" src_ip=198.51.100.62 spf=softfail dkim=fail
+2026-10-13T07:55:14Z mail-gw-01 id=msg-81003 url=http://update-your-hr-portal.net/verify?token=sample123 reputation=malicious verdict=high_risk_phishing
+2026-10-13T07:55:15Z mail-gw-01 id=msg-81003 attachment=none auth_results=spf:softfail,dkim:fail,dmarc:fail action=quarantine
+2026-10-13T07:55:19Z mail-gw-01 id=msg-81004 direction=inbound from=alerts@bank.example to=treasury@example.corp subject="Daily statement" src_ip=192.0.2.88 spf=pass dkim=pass action=deliver
+2026-10-13T07:55:21Z siem-01 alert=PHISHING_LINK_BLOCKED message_id=msg-81003 recipient=alex@example.corp url_domain=update-your-hr-portal.net severity=high alert_id=siem-72001
+2026-10-13T07:56:03Z mail-gw-01 id=msg-81005 direction=inbound from=reports@partner.example to=ops@example.corp subject="Weekly report" src_ip=203.0.113.18 spf=pass dkim=pass action=deliver

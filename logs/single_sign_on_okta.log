@@ -1,0 +1,8 @@
+2026-10-13T02:14:01Z sso tenant=corp user=ceo@example.corp app=mail event=login_challenge src_ip=198.51.100.76 device=unknown outcome=mfa_required request=sso-18001
+2026-10-13T02:14:10Z sso tenant=corp user=ceo@example.corp factor=push event=mfa_push_sent device=exec-phone-01 request=sso-18002
+2026-10-13T02:14:42Z sso tenant=corp user=ceo@example.corp factor=push event=mfa_push_sent device=exec-phone-01 request=sso-18003
+2026-10-13T02:15:16Z sso tenant=corp user=ceo@example.corp factor=push event=mfa_push_sent device=exec-phone-01 request=sso-18004
+2026-10-13T02:16:03Z sso tenant=corp user=ceo@example.corp factor=push event=mfa_push_sent device=exec-phone-01 request=sso-18005
+2026-10-13T02:16:41Z sso tenant=corp user=ceo@example.corp factor=push event=mfa_approved device=exec-phone-01 request=sso-18006 src_ip=198.51.100.76
+2026-10-13T02:16:44Z siem-01 alert=MFA_PUSH_FATIGUE user=ceo@example.corp pushes=5 interval=2m34s src_ip=198.51.100.76 alert_id=siem-18007
+2026-10-13T02:16:50Z sso tenant=corp user=ceo@example.corp session=sso-18008 event=revoked reason=security_review

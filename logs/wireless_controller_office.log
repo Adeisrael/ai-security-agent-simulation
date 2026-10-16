@@ -1,0 +1,8 @@
+2026-10-13T16:11:01Z wlan-ctrl-01 ap=OFFICE-AP-07 client_mac=3C:52:82:AA:10:01 event=associate vlan=corp auth=802.1x session=wifi-17001
+2026-10-13T16:11:05Z wlan-ctrl-01 ap=OFFICE-AP-07 client_mac=3C:52:82:AA:10:02 event=associate vlan=corp auth=802.1x session=wifi-17002
+2026-10-13T16:11:11Z wlan-ctrl-01 client_mac=3C:52:82:AA:10:01 event=mac_conflict observed_ap=OFFICE-AP-03 prior_ap=OFFICE-AP-07 alert=possible_spoof id=wifi-17003
+2026-10-13T16:11:13Z wlan-ctrl-01 ap=GUEST-FREE-WIFI bssid=02:AA:BB:CC:DD:EE ssid=Corp-Guest channel=6 event=rogue_ap_detected signal=-38dBm id=wifi-17004
+2026-10-13T16:11:14Z wlan-ctrl-01 ap=OFFICE-AP-03 interference=co_channel severity=high source_bssid=02:AA:BB:CC:DD:EE id=wifi-17005
+2026-10-13T16:11:18Z wlan-ctrl-01 client_mac=3C:52:82:AA:10:01 event=deauth reason=duplicate_mac session=wifi-17001
+2026-10-13T16:11:22Z siem-01 alert=MAC_SPOOF_AND_ROGUE_AP bssid=02:AA:BB:CC:DD:EE client_mac=3C:52:82:AA:10:01 alert_id=siem-17006 severity=high
+2026-10-13T16:11:30Z wlan-ctrl-01 action=contain_rogue_ap bssid=02:AA:BB:CC:DD:EE status=monitoring event=wifi-17007

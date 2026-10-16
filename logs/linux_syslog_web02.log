@@ -1,0 +1,8 @@
+2026-10-13T06:30:01Z web02 sshd[2041]: Accepted publickey for devuser from 10.20.5.18 port 50912 ssh2 session=lnx-13001
+2026-10-13T06:30:09Z web02 sudo[2090]: devuser : command attempted ; TTY=pts/1 ; PWD=/var/www ; USER=root ; COMMAND=/usr/bin/cat /etc/shadow
+2026-10-13T06:30:09Z web02 sudo[2090]: pam_unix(sudo:auth): authentication failure; user=devuser rhost= uid=1004 euid=0 event=lnx-13002
+2026-10-13T06:30:11Z web02 kernel: audit: pid=2118 uid=1004 exe=/tmp/.cache/updater op=execve target=/usr/bin/sudo result=denied event=lnx-13003
+2026-10-13T06:30:14Z web02 sudo[2130]: devuser : 3 incorrect password attempts ; TTY=pts/1 ; USER=root ; COMMAND=/bin/bash event=lnx-13004
+2026-10-13T06:30:16Z web02 authpriv: privilege_escalation_attempt uid=1004 target_uid=0 method=suid_binary path=/tmp/.cache/updater result=blocked
+2026-10-13T06:30:18Z web02 auditd[882]: type=USER_AVC msg=audit(1791873018): user=devuser denied { sys_admin } for pid=2118 comm=updater
+2026-10-13T06:30:20Z siem-01 alert=UNAUTHORIZED_SUDO_ROOT_ATTEMPT host=web02 user=devuser severity=high alert_id=siem-13005

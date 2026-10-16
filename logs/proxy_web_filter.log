@@ -1,0 +1,8 @@
+2026-10-13T04:22:01Z proxy-01 src=10.20.6.44 user=eng02 method=GET url=https://repo.example/packages status=200 rule=allowed req=px-12001
+2026-10-13T04:22:12Z proxy-01 src=10.20.6.44 user=eng02 method=CONNECT dst=198.51.100.200:443 sni=unknown.example status=200 rule=direct_egress req=px-12002
+2026-10-13T04:22:13Z proxy-01 src=10.20.6.44 user=eng02 filter=disabled_for_process process=curl.exe req=px-12003
+2026-10-13T04:22:15Z netflow src=10.20.6.44 dst=198.51.100.200:443 bytes_out=98312 duration=48s flow_id=nf-12004
+2026-10-13T04:22:31Z proxy-01 src=10.20.6.44 user=eng02 method=POST dst=198.51.100.200:443 bytes=32768 rule=filter_bypass req=px-12005
+2026-10-13T04:22:44Z ti-01 indicator_ip=198.51.100.200 classification=known_c2 confidence=high feed=synthetic-intel
+2026-10-13T04:22:48Z siem-01 alert=FILTER_BYPASS_TO_C2 src=10.20.6.44 dst=198.51.100.200 severity=critical alert_id=siem-12006
+2026-10-13T04:22:51Z firewall-02 action=block src=10.20.6.44 dst=198.51.100.200:443 rule=egress_c2_block event=fw-12007

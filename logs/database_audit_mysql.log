@@ -1,0 +1,8 @@
+2026-10-13T13:20:00Z mysql-audit db=crm user=svc_report src=10.20.8.40 conn=db-30001 query="SELECT count(*) FROM customers" rows=1
+2026-10-13T13:20:04Z mysql-audit db=payments user=analyst1 src=10.20.9.15 conn=db-30002 query="SHOW DATABASES" rows=8
+2026-10-13T13:20:05Z mysql-audit db=payments user=analyst1 src=10.20.9.15 conn=db-30002 query="SHOW TABLES" rows=42
+2026-10-13T13:20:06Z mysql-audit db=payments user=analyst1 src=10.20.9.15 conn=db-30002 query="SHOW COLUMNS FROM credit_cards" rows=12
+2026-10-13T13:20:07Z mysql-audit db=payments user=analyst1 src=10.20.9.15 conn=db-30002 query="SELECT * FROM credit_cards" rows=0 error=permission_denied
+2026-10-13T13:20:08Z mysql-audit db=payments user=analyst1 src=10.20.9.15 conn=db-30002 query="SHOW TABLES" rows=42
+2026-10-13T13:20:09Z mysql-audit db=payments user=analyst1 src=10.20.9.15 conn=db-30002 query="SELECT * FROM credit_cards" rows=0 error=permission_denied alert=rapid_enumeration
+2026-10-13T13:20:10Z siem-01 alert=DB_ENUMERATION_ATTEMPT user=analyst1 src=10.20.9.15 db=payments query_count=5_in_6s alert_id=siem-94001

@@ -1,0 +1,8 @@
+2026-10-13T01:51:00Z WIN-118 Security EventID=4624 user=SYSTEM logon_type=5 logon_id=0x3e7 record=sec-14001
+2026-10-13T01:51:12Z WIN-118 Security EventID=4625 user=administrator src=198.51.100.17 logon_type=3 status=0xc000006d record=sec-14002
+2026-10-13T01:51:14Z WIN-118 Security EventID=4625 user=administrator src=198.51.100.17 logon_type=3 status=0xc000006a record=sec-14003
+2026-10-13T01:51:16Z WIN-118 Security EventID=4625 user=administrator src=198.51.100.17 logon_type=3 status=0xc000006a record=sec-14004
+2026-10-13T01:51:21Z WIN-118 Security EventID=1102 subject=WIN-118\administrator message="The audit log was cleared" record=sec-14005
+2026-10-13T01:51:22Z WIN-118 Security service=EventLog operation=ClearLog actor=WIN-118\administrator result=success activity_id=evt-14006
+2026-10-13T01:51:25Z siem-01 alert=SECURITY_LOG_CLEARED_AFTER_FAILED_LOGONS host=WIN-118 preceding_4625=3 alert_id=siem-14007
+2026-10-13T01:51:28Z collector-01 host=WIN-118 channel=Security status=gap_detected last_record=sec-14005 collector_id=col-14008

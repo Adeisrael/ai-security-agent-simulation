@@ -1,0 +1,8 @@
+2026-10-13T12:00:01Z dns-01 client=10.20.4.18 query=portal.example type=A answer=203.0.113.20 xid=dns-92001
+2026-10-13T12:00:05Z dns-01 client=10.20.4.18 query=api.example type=A answer=203.0.113.21 xid=dns-92002
+2026-10-13T12:00:11Z dns-01 client=10.20.7.22 query=mail.example type=MX answer=mx.example xid=dns-92003
+2026-10-13T12:00:19Z dns-01 client=10.20.4.18 query=a8f01c9e2b7d4f6a9c0e1d3b5a7f9c2e.malicious-site.com type=TXT answer=NXDOMAIN xid=dns-92004
+2026-10-13T12:00:20Z dns-01 client=10.20.4.18 query=7d3e91b5a2f04c8d6e1a9b3f5c7d0e2a.malicious-site.com type=TXT answer=NXDOMAIN xid=dns-92005
+2026-10-13T12:00:21Z dns-01 client=10.20.4.18 query=0c5a8f2d1e7b4a9c3f6d0b2e8a1c5d7f.malicious-site.com type=TXT answer=NXDOMAIN xid=dns-92006
+2026-10-13T12:00:22Z dns-01 client=10.20.4.18 query=9f2b6d1a4c8e3f7b0a5d2c1e6f9b4a8d.malicious-site.com type=TXT answer=NXDOMAIN xid=dns-92007 alert=DNS_TUNNEL_PATTERN
+2026-10-13T12:00:25Z siem-01 alert=DNS_EXFIL_SUSPECT client=10.20.4.18 domain=malicious-site.com long_label_count=4 alert_id=siem-83001

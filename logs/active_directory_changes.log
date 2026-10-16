@@ -1,0 +1,8 @@
+2026-10-13T14:32:01Z dc-west-02 EventID=4624 user=svc_sync src=10.20.3.12 status=success logon_id=ad-50101
+2026-10-13T14:32:08Z dc-west-02 EventID=4720 actor=it.admin target=contractor7 action=user_created logon_id=ad-50102
+2026-10-13T14:32:20Z dc-west-02 EventID=4732 actor=it.admin group=Helpdesk target=contractor7 action=member_added logon_id=ad-50103
+2026-10-13T14:32:31Z dc-west-02 EventID=4624 user=contractor7 src=10.20.12.88 status=success logon_id=ad-50104
+2026-10-13T14:32:45Z dc-west-02 EventID=4732 actor=it.admin group="Domain Admins" target=contractor7 action=member_added logon_id=ad-50105
+2026-10-13T14:32:46Z dc-west-02 change_id=chg-99118 actor=it.admin subject=contractor7 group="Domain Admins" outcome=success source=10.20.3.12
+2026-10-13T14:33:00Z siem-01 alert=PRIVILEGED_GROUP_MEMBERSHIP_CHANGE account=contractor7 group="Domain Admins" actor=it.admin severity=critical alert_id=siem-95001
+2026-10-13T14:33:06Z dc-west-02 EventID=4733 actor=sec.ops group="Domain Admins" target=contractor7 action=member_removed logon_id=ad-50106

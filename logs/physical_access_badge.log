@@ -1,0 +1,8 @@
+2026-10-13T23:48:01Z badge-ctrl-02 door=HQ-L1-ENTRY badge=E-004182 person=Jordan.K result=granted event=pa-20001
+2026-10-13T23:51:30Z badge-ctrl-02 door=HQ-L3-IT badge=E-004182 person=Jordan.K result=granted event=pa-20002
+2026-10-13T23:55:04Z badge-ctrl-02 door=DC-CAGE-04 badge=E-004182 person=Jordan.K result=denied reason=clearance_required event=pa-20003
+2026-10-13T23:55:26Z badge-ctrl-02 door=DC-CAGE-04 badge=E-004182 person=Jordan.K result=denied reason=clearance_required event=pa-20004
+2026-10-13T23:56:02Z badge-ctrl-02 door=DC-CAGE-04 badge=E-004182 person=Jordan.K result=denied reason=clearance_required event=pa-20005
+2026-10-13T23:56:05Z access-policy badge=E-004182 person=Jordan.K required_clearance=DC_CAGE actual_clearance=GENERAL_EMPLOYEE decision=deny policy_id=phys-20006
+2026-10-13T23:56:12Z siem-01 alert=REPEATED_UNAUTHORIZED_SERVER_CAGE_ACCESS badge=E-004182 door=DC-CAGE-04 attempts=3 alert_id=siem-20007 severity=high
+2026-10-13T23:57:00Z guard-console action=dispatch_security door=DC-CAGE-04 incident=INC-20008 status=acknowledged

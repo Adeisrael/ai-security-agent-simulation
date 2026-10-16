@@ -1,0 +1,8 @@
+2026-10-13T11:02:01Z aws s3 event=GetObject bucket=corp-public object=handbook.pdf src_ip=203.0.113.81 user=anon request_id=s3-60001 status=200
+2026-10-13T11:02:14Z aws s3 event=ListBucket bucket=corp-finance src_ip=198.51.100.91 user=unknown request_id=s3-60002 status=403
+2026-10-13T11:02:19Z aws s3 event=GetObject bucket=corp-finance object=client_financials_2026.csv src_ip=198.51.100.91 user=external-unknown request_id=s3-60003 status=200 bytes=184203
+2026-10-13T11:02:20Z aws s3 event=GetObject bucket=corp-finance object=client_financials_2026.csv src_ip=198.51.100.91 user=external-unknown request_id=s3-60004 status=200 bytes=184203
+2026-10-13T11:02:22Z aws cloudtrail event=GetObject bucket=corp-finance key=client_financials_2026.csv sourceIPAddress=198.51.100.91 principalId=ANON requestID=s3-60005
+2026-10-13T11:02:24Z aws s3 event=GetObject bucket=corp-finance object=client_financials_2026.csv src_ip=198.51.100.91 user=external-unknown request_id=s3-60006 status=200 bytes=184203
+2026-10-13T11:02:25Z siem-01 alert=EXTERNAL_SENSITIVE_OBJECT_READ src=198.51.100.91 object=client_financials_2026.csv bucket=corp-finance severity=critical alert_id=siem-55021
+2026-10-13T11:02:31Z aws s3 event=PutBucketPolicy bucket=corp-finance src_ip=198.51.100.91 user=external-unknown request_id=s3-60007 status=403

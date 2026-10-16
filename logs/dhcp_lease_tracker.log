@@ -1,0 +1,8 @@
+2026-10-13T02:10:01Z dhcp-01 DISCOVER chaddr=02:11:22:33:44:55 xid=dhcp-11001 vlan=corp
+2026-10-13T02:10:02Z dhcp-01 OFFER chaddr=02:11:22:33:44:55 yiaddr=10.20.14.101 xid=dhcp-11001 lease=3600
+2026-10-13T02:10:08Z dhcp-01 DISCOVER chaddr=02:11:22:33:44:55 xid=dhcp-11002 vlan=corp
+2026-10-13T02:10:09Z dhcp-01 REQUEST chaddr=02:11:22:33:44:55 requested_ip=10.20.14.101 xid=dhcp-11002
+2026-10-13T02:10:15Z dhcp-01 DISCOVER chaddr=02:11:22:33:44:55 xid=dhcp-11003 vlan=corp
+2026-10-13T02:10:16Z dhcp-01 REQUEST chaddr=02:11:22:33:44:55 requested_ip=10.20.14.102 xid=dhcp-11003
+2026-10-13T02:10:17Z nac-01 ALERT=UNREGISTERED_DEVICE mac=02:11:22:33:44:55 switch=sw-14 port=ge-0/0/18 event=nac-11004
+2026-10-13T02:10:21Z dhcp-01 DECLINE chaddr=02:11:22:33:44:55 requested_ip=10.20.14.102 xid=dhcp-11003 reason=rogue_device_policy

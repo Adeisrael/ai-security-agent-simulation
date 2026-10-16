@@ -1,0 +1,8 @@
+2026-10-13T08:00:02Z vpn-east-01 event=login user=pat.lee src_ip=192.0.2.60 geo=New_York,US device=LT-220 result=success session=vpn-71001
+2026-10-13T08:01:10Z vpn-east-01 event=tunnel_up user=pat.lee src_ip=192.0.2.60 assigned_ip=10.88.2.14 session=vpn-71001
+2026-10-13T08:05:44Z vpn-east-01 event=heartbeat user=pat.lee src_ip=192.0.2.60 session=vpn-71001
+2026-10-13T08:10:02Z vpn-east-01 event=logout user=pat.lee src_ip=192.0.2.60 session=vpn-71001 reason=client_disconnect
+2026-10-13T08:10:11Z vpn-east-01 event=login user=pat.lee src_ip=198.51.100.147 geo=Paris,FR device=unknown result=success session=vpn-71002
+2026-10-13T08:10:13Z vpn-east-01 event=mfa user=pat.lee src_ip=198.51.100.147 method=push result=approved session=vpn-71002
+2026-10-13T08:10:16Z siem-01 alert=IMPOSSIBLE_TRAVEL user=pat.lee from=New_York,US to=Paris,FR interval=10m09s alert_id=siem-61008 severity=high
+2026-10-13T08:10:20Z vpn-east-01 event=session_revoke user=pat.lee session=vpn-71002 reason=impossible_travel policy=geo_velocity

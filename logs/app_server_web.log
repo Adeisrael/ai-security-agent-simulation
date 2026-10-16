@@ -1,0 +1,8 @@
+203.0.113.44 - - [13/Oct/2026:09:12:01 +0000] "GET /health HTTP/1.1" 200 18 src=192.0.2.15 req_id=web-a100
+203.0.113.44 - - [13/Oct/2026:09:12:11 +0000] "GET /products?id=42 HTTP/1.1" 200 812 src=198.51.100.23 req_id=web-a101
+203.0.113.44 - - [13/Oct/2026:09:12:14 +0000] "GET /search?q=shoes HTTP/1.1" 200 1204 src=198.51.100.23 req_id=web-a102
+203.0.113.44 - - [13/Oct/2026:09:12:19 +0000] "GET /login HTTP/1.1" 200 2310 src=192.0.2.91 req_id=web-a103
+203.0.113.44 - - [13/Oct/2026:09:12:27 +0000] "GET /products?id=%27%20OR%201%3D1%20-- HTTP/1.1" 400 96 src=198.51.100.23 req_id=web-a104 alert=SQLI_PATTERN
+203.0.113.44 - - [13/Oct/2026:09:12:28 +0000] "GET /products?id=1%27%20OR%201%3D1%20-- HTTP/1.1" 403 128 src=198.51.100.23 req_id=web-a105 waf=blocked
+203.0.113.44 - - [13/Oct/2026:09:12:32 +0000] "POST /cart HTTP/1.1" 200 344 src=192.0.2.15 req_id=web-a106
+203.0.113.44 - - [13/Oct/2026:09:12:39 +0000] "GET /favicon.ico HTTP/1.1" 304 0 src=192.0.2.15 req_id=web-a107

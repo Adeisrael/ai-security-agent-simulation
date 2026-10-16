@@ -1,0 +1,8 @@
+2026-10-13T10:40:01Z edr agent=EDR-WS-044 host=WS-044 user=alex process=explorer.exe pid=4012 event=process_start hash=8d12a4b0
+2026-10-13T10:40:03Z edr agent=EDR-WS-044 host=WS-044 user=alex process=outlook.exe pid=4150 event=process_start parent=explorer.exe
+2026-10-13T10:40:11Z edr agent=EDR-WS-044 host=WS-044 user=alex process=powershell.exe pid=4228 parent=outlook.exe cmd="powershell -ExecutionPolicy Bypass -File C:\Users\alex\AppData\Local\Temp\cache_sync.ps1" event=process_start
+2026-10-13T10:40:12Z edr agent=EDR-WS-044 host=WS-044 user=alex file=C:\Users\alex\AppData\Local\Temp\cache_sync.ps1 sha256=unknown reputation=unseen event=file_execute
+2026-10-13T10:40:13Z edr agent=EDR-WS-044 host=WS-044 user=alex process=powershell.exe pid=4228 behavior=encoded_command indicator=script_from_temp
+2026-10-13T10:40:15Z edr agent=EDR-WS-044 host=WS-044 user=alex net=connect dst=198.51.100.88:443 process_pid=4228 event=network
+2026-10-13T10:40:17Z edr agent=EDR-WS-044 host=WS-044 user=alex alert=UNKNOWN_SCRIPT_TEMP_EXEC severity=high alert_id=edr-22018 action=quarantine
+2026-10-13T10:40:19Z edr agent=EDR-WS-044 host=WS-044 user=alex process=powershell.exe pid=4228 event=terminated reason=policy

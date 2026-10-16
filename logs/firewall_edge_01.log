@@ -1,0 +1,8 @@
+2026-10-13T00:14:02Z edge-fw-01 ALLOW src=198.51.100.77:48211 dst=203.0.113.10:443 proto=tcp rule=web_https conn=fw-884210
+2026-10-13T00:14:04Z edge-fw-01 DENY src=198.51.100.77:53001 dst=203.0.113.22:22 proto=tcp reason=policy_block event=fw-884211
+2026-10-13T00:14:05Z edge-fw-01 DENY src=198.51.100.77:53002 dst=203.0.113.22:22 proto=tcp reason=policy_block event=fw-884212
+2026-10-13T00:14:06Z edge-fw-01 DENY src=198.51.100.77:53003 dst=203.0.113.22:22 proto=tcp reason=policy_block event=fw-884213
+2026-10-13T00:14:07Z edge-fw-01 DENY src=198.51.100.77:53004 dst=203.0.113.22:22 proto=tcp reason=policy_block event=fw-884214
+2026-10-13T00:14:08Z edge-fw-01 DENY src=198.51.100.77:53005 dst=203.0.113.22:22 proto=tcp reason=policy_block event=fw-884215
+2026-10-13T00:14:09Z edge-fw-01 DENY src=198.51.100.77:53006 dst=203.0.113.22:22 proto=tcp reason=policy_block event=fw-884216
+2026-10-13T00:14:10Z edge-fw-01 ALERT src=198.51.100.77 dst=203.0.113.22:22 proto=tcp sig=SSH_BRUTE_FORCE attempts=6_window=6s action=rate_limit event=fw-884217

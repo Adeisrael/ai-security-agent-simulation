@@ -1,0 +1,8 @@
+2026-10-13T17:00:01Z patchmgr-01 host=DB-PROD-02 os=Linux scan_id=patch-19001 status=complete
+2026-10-13T17:00:05Z patchmgr-01 host=DB-PROD-02 package=openssl installed=3.0.1 latest=3.0.14 status=patch_missing
+2026-10-13T17:00:06Z vulnscan-01 host=DB-PROD-02 cve=CVE-2026-99999 severity=critical cvss=9.8 exposure=remote
+2026-10-13T17:00:07Z vulnscan-01 host=DB-PROD-02 finding=ZERO_DAY_UNPATCHED exploit_status=active_in_wild confidence=high scan_id=vuln-19002
+2026-10-13T17:00:09Z patchmgr-01 host=DB-PROD-02 service=payments-db environment=production patch_window=none status=overdue
+2026-10-13T17:00:11Z asset-01 host=DB-PROD-02 owner=database-ops criticality=tier_0 exposure=internet_facing
+2026-10-13T17:00:14Z siem-01 alert=CRITICAL_UNPATCHED_ZERO_DAY host=DB-PROD-02 cve=CVE-2026-99999 alert_id=siem-19003 severity=critical
+2026-10-13T17:00:20Z patchmgr-01 host=DB-PROD-02 ticket=INC-19004 action=escalated_to=security-ops status=awaiting_emergency_patch

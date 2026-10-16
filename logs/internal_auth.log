@@ -1,0 +1,8 @@
+2026-10-13T03:14:51Z dc-east-01 EventID=4624 user=j.smith logon_type=3 src=10.20.4.18 host=WS-044 auth_id=ad-77101 status=success
+2026-10-13T03:15:00Z dc-east-01 EventID=4769 user=j.smith service= cifs/FS-SENSITIVE-01 src=10.20.4.18 ticket_id=ad-77102
+2026-10-13T03:15:03Z fs-sensitive-01 EventID=5140 user=j.smith share=Finance-Restricted src=10.20.4.18 access=read_write file_id=fs-9911
+2026-10-13T03:15:07Z fs-sensitive-01 EventID=4663 user=j.smith object=\FS-SENSITIVE-01\Finance-Restricted\Q4_Budget.xlsx access=ReadData file_id=fs-9912
+2026-10-13T03:15:12Z dc-east-01 EventID=4624 user=m.chen logon_type=3 src=10.20.7.22 host=WS-118 auth_id=ad-77103 status=success
+2026-10-13T03:15:19Z fs-sensitive-01 EventID=4663 user=j.smith object=\FS-SENSITIVE-01\Finance-Restricted\Payroll_Archive.zip access=ReadData file_id=fs-9913
+2026-10-13T03:15:31Z dc-east-01 EventID=4769 user=j.smith service=cifs/FS-SENSITIVE-01 src=10.20.4.18 ticket_id=ad-77104
+2026-10-13T03:15:45Z siem-01 ALERT rule=OFF_HOURS_SENSITIVE_SHARE_ACCESS user=j.smith host=FS-SENSITIVE-01 severity=high alert_id=siem-44901
