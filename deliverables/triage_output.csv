@@ -1,0 +1,3 @@
+timestamp,source_log,indicator,action,severity,confidence,agent_reasoning
+2026-10-16T10:15:00Z,firewall.log,192.168.1.105,Outbound connection to known malicious IP,High,0.92,Correlated firewall block with EDR alert on same host within 5 minutes. High confidence in lateral movement.
+2026-10-16T10:16:30Z,active_directory.log,user_jdoe,Anomalous login from unrecognized device,Medium,0.78,User logged in from a device not seen in the last 30 days. Timestamp aligns with firewall anomaly. Needs human review.
